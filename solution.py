@@ -1,5 +1,4 @@
 import argparse
-import math
 
 
 def is_invalid(num: str) -> bool:
@@ -46,7 +45,7 @@ def sum_invalids(puzzle_input: str) -> int:
     retval = 0
     for ran in ranges:
         for num in num_range(ran):
-            if is_invalid(num) == True:
+            if is_invalid(num):
                 retval += int(num)
 
     return retval

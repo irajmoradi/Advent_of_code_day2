@@ -1,21 +1,20 @@
 from solution import is_invalid, num_range, sum_invalids 
-import math
 
 
 def test_puzzle_1():
-    assert is_invalid("113113") == True
+    assert is_invalid("113113")
 
 def test_puzzle_2():
-    assert is_invalid("123456123456") == True
+    assert is_invalid("123456123456")
 
 def test_puzzle_3():
-    assert is_invalid("123456123451") == False
+    assert not is_invalid("123456123451")
 
 def test_puzzle_4():
-    assert is_invalid("1232313") == False
+    assert not is_invalid("1232313")
 
 def test_puzzle_5():
-    assert is_invalid("11111") == False
+    assert not is_invalid("11111")
 
 def test_puzzle_6():
     assert num_range("11-14") == ["11", "12", "13", "14"]
