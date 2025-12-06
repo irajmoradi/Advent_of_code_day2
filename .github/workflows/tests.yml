@@ -26,4 +26,4 @@ jobs:
         run: uv run -m pytest
 
       - name: Run Ruff
-        run: ruff check --output-format=github
+        run: uv run ruff check --output-format=github
